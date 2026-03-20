@@ -107,13 +107,14 @@ Behavior:
 - show only unfinished checklist items
 - use this as the default read-only task overview command
 
-### `Forgevia checkTask`
+### `Forgevia think`
 
 Purpose:
-- alias for `Forgevia tasks`
+- think through a requirement before implementation
 
 Behavior:
-- same as `Forgevia tasks`
+- route to `openspec-explore`
+- use the user's requirement input as the exploration prompt
 
 ### `Forgevia review`
 

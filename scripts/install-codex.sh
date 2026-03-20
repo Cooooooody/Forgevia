@@ -129,7 +129,7 @@ overlay_assets() {
   sync_path "$ASSETS_DIR/skills/forgevia-implement" "$CODEX_ROOT/skills/forgevia-implement"
   sync_path "$ASSETS_DIR/skills/forgevia-archive" "$CODEX_ROOT/skills/forgevia-archive"
   sync_path "$ASSETS_DIR/skills/forgevia-tasks" "$CODEX_ROOT/skills/forgevia-tasks"
-  sync_path "$ASSETS_DIR/skills/forgevia-check-task" "$CODEX_ROOT/skills/forgevia-check-task"
+  sync_path "$ASSETS_DIR/skills/forgevia-think" "$CODEX_ROOT/skills/forgevia-think"
   sync_path "$ASSETS_DIR/skills/forgevia-review" "$CODEX_ROOT/skills/forgevia-review"
   sync_path "$ASSETS_DIR/skills/forgevia-verify-web" "$CODEX_ROOT/skills/forgevia-verify-web"
   sync_path "$ASSETS_DIR/skills/forgevia-draw" "$CODEX_ROOT/skills/forgevia-draw"

@@ -161,7 +161,7 @@ main() {
     "$ASSETS_DIR/skills/forgevia-implement::$CODEX_ROOT/skills/forgevia-implement" \
     "$ASSETS_DIR/skills/forgevia-archive::$CODEX_ROOT/skills/forgevia-archive" \
     "$ASSETS_DIR/skills/forgevia-tasks::$CODEX_ROOT/skills/forgevia-tasks" \
-    "$ASSETS_DIR/skills/forgevia-check-task::$CODEX_ROOT/skills/forgevia-check-task" \
+    "$ASSETS_DIR/skills/forgevia-think::$CODEX_ROOT/skills/forgevia-think" \
     "$ASSETS_DIR/skills/forgevia-review::$CODEX_ROOT/skills/forgevia-review" \
     "$ASSETS_DIR/skills/forgevia-verify-web::$CODEX_ROOT/skills/forgevia-verify-web" \
     "$ASSETS_DIR/skills/forgevia-draw::$CODEX_ROOT/skills/forgevia-draw" \

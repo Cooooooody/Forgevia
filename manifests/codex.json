@@ -74,9 +74,9 @@
       "kind": "skill-directory"
     },
     {
-      "id": "forgevia-check-task-skill",
-      "source": "assets/codex/skills/forgevia-check-task",
-      "target": "~/.codex/skills/forgevia-check-task",
+      "id": "forgevia-think-skill",
+      "source": "assets/codex/skills/forgevia-think",
+      "target": "~/.codex/skills/forgevia-think",
       "owner": "forgevia",
       "kind": "skill-directory"
     },
