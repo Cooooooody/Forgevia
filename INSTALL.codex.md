@@ -14,6 +14,8 @@ This repository is GitHub-first. The initial Codex path assumes:
 - Forgevia ships and manages its own curated copies of the workflow files it wants to own
 - `~/.codex` is the primary managed global target
 
+Claude is not supported yet in the current implementation.
+
 ## Current Scope
 
 This document defines the intended Codex installation flow for Forgevia.
@@ -32,7 +34,7 @@ After Forgevia is fully implemented for Codex, the installation flow should leav
 - `openspec` is available on `PATH`
 - required Codex workflow files exist under `~/.codex`
 - Forgevia-managed skill files are installed from this repository's owned copies
-- project bootstrap can initialize OpenSpec and the expected Codex project assets
+- project bootstrap can initialize OpenSpec when missing
 
 ## Planned Install Flow
 
@@ -106,12 +108,12 @@ For a target repository, Forgevia should later provide a project bootstrap flow 
 
 - checks whether OpenSpec is already initialized
 - initializes OpenSpec for Codex when missing
-- overlays any Forgevia-managed project-local assets
+- does not take ownership of project business files
 
-The current repository also includes a minimal install entrypoint:
+The current repository now includes a minimal project bootstrap entrypoint:
 
 ```bash
-./scripts/install-codex.sh
+./scripts/bootstrap-project.sh --tools codex /path/to/project
 ```
 
 ## Open Questions Before Automation
@@ -136,3 +138,4 @@ Until the installer scripts exist, Forgevia is being designed under these Codex 
 - `requesting-code-review` is still operationally part of the superpowers install surface
 - `playwright-interactive` is sourced from the maintainer's current `~/.codex` setup and is being vendored into this repo as a Forgevia-managed skill
 - Forgevia itself is an explicit entry skill, not an auto-triggered replacement for all underlying skills
+- Forgevia does not manage project source files; it only checks for and invokes OpenSpec initialization

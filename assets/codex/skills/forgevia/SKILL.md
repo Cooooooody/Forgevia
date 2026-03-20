@@ -74,8 +74,15 @@ When implementation is complete:
 - ensure verification has run
 - hand off to archive flow when the user wants to close the change
 
+### 6. Respect project ownership boundaries
+
+Forgevia may help detect whether a repository has been initialized with OpenSpec and may invoke `openspec init` when the user wants that help.
+
+Forgevia does not take ownership of project source files or silently overlay project-local workflow files.
+
 ## Boundaries
 
 - Forgevia orchestrates; it does not manually duplicate every underlying skill body.
 - Forgevia should keep the user on one coherent workflow, not invent side workflows.
 - If a lower-level skill is clearly the right direct tool for the current step, Forgevia should say so and use it.
+- Forgevia manages global workflow environment and invocation patterns, not user project code.
