@@ -15,6 +15,6 @@ Use this skill when the user explicitly asks Forgevia to draw an interaction seq
 
 - Route content generation to `mermaid-diagram-specialist`.
 - Prefer a complete interaction-module sequence diagram.
-- Write a timestamped `.mdd`.
+- Write a timestamped `.mmd`.
 - Render a matching `.svg`.
 - Name outputs as `YYYYMMDD-HHMMSS-功能`.
