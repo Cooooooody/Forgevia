@@ -62,8 +62,6 @@ If it already exists, Forgevia should not reinstall blindly. It should detect th
 
 If `superpowers` is missing for Codex, install it from the upstream guide:
 
-[superpowers Codex install](https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.codex/INSTALL.md)
-
 The intended Codex instruction is:
 
 > Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.codex/INSTALL.md
