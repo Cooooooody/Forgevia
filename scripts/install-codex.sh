@@ -141,6 +141,7 @@ overlay_assets() {
   sync_path "$ASSETS_DIR/superpowers/skills/executing-plans/SKILL.md" "$CODEX_ROOT/superpowers/skills/executing-plans/SKILL.md"
   sync_path "$ASSETS_DIR/superpowers/skills/subagent-driven-development" "$CODEX_ROOT/superpowers/skills/subagent-driven-development"
   sync_path "$ASSETS_DIR/superpowers/skills/requesting-code-review" "$CODEX_ROOT/superpowers/skills/requesting-code-review"
+  sync_path "$ASSETS_DIR/superpowers/skills/test-driven-development/SKILL.md" "$CODEX_ROOT/superpowers/skills/test-driven-development/SKILL.md"
   log_success "Applied Forgevia-managed Codex assets"
 }
 

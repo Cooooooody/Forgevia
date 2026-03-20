@@ -163,6 +163,14 @@
       "upstream": "superpowers"
     },
     {
+      "id": "test-driven-development-skill",
+      "source": "assets/codex/superpowers/skills/test-driven-development/SKILL.md",
+      "target": "~/.codex/superpowers/skills/test-driven-development/SKILL.md",
+      "owner": "forgevia",
+      "kind": "superpowers-override",
+      "upstream": "superpowers"
+    },
+    {
       "id": "executing-plans-skill",
       "source": "assets/codex/superpowers/skills/executing-plans/SKILL.md",
       "target": "~/.codex/superpowers/skills/executing-plans/SKILL.md",

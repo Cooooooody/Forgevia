@@ -173,7 +173,8 @@ main() {
     "$ASSETS_DIR/superpowers/skills/writing-plans/SKILL.md::$CODEX_ROOT/superpowers/skills/writing-plans/SKILL.md" \
     "$ASSETS_DIR/superpowers/skills/executing-plans/SKILL.md::$CODEX_ROOT/superpowers/skills/executing-plans/SKILL.md" \
     "$ASSETS_DIR/superpowers/skills/subagent-driven-development::$CODEX_ROOT/superpowers/skills/subagent-driven-development" \
-    "$ASSETS_DIR/superpowers/skills/requesting-code-review::$CODEX_ROOT/superpowers/skills/requesting-code-review"
+    "$ASSETS_DIR/superpowers/skills/requesting-code-review::$CODEX_ROOT/superpowers/skills/requesting-code-review" \
+    "$ASSETS_DIR/superpowers/skills/test-driven-development/SKILL.md::$CODEX_ROOT/superpowers/skills/test-driven-development/SKILL.md"
   do
     local source_path="${pair%%::*}"
     local target_path="${pair#*::}"
