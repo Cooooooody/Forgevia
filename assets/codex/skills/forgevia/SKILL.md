@@ -77,11 +77,10 @@ Required checks:
 
 Behavior:
 - treat the named change as the source of truth
-- use the Forgevia-modified superpowers path
-- require TDD-oriented implementation
+- use superpowers to complete the development for the named change
+- require a TDD-oriented implementation path
 - prefer `subagent-driven-development` or `executing-plans` based on the task structure
 - use `requesting-code-review` at dependency-ready checkpoints
-- require `playwright-interactive` before completion if the work affects web behavior
 
 Do not guess the change from conversation context when this command is used.
 

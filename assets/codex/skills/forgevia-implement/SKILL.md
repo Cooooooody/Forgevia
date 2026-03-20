@@ -1,6 +1,6 @@
 ---
 name: forgevia-implement
-description: Use when the user explicitly asks Forgevia to implement one named, active OpenSpec change using the Forgevia-modified superpowers workflow.
+description: Use when the user explicitly asks Forgevia to implement one named, active OpenSpec change using superpowers with a TDD workflow.
 ---
 
 # Forgevia Implement
@@ -16,9 +16,8 @@ Use this skill only when the user explicitly names a change to implement.
 - Verify the change exists under `openspec/changes/`.
 - Verify the change is not archived.
 - Verify the change has `tasks.md`.
-- Route implementation through the Forgevia-modified superpowers path.
-- Require TDD-oriented execution.
+- Use superpowers to complete the development for the named change.
+- Require a TDD-oriented execution path throughout the implementation.
 - Use review checkpoints at dependency-ready task groups.
-- Require `playwright-interactive` before completion when the work affects web behavior.
 
 Do not guess the change from conversation context.
