@@ -8,6 +8,16 @@
       "package": "@fission-ai/openspec",
       "version": "latest",
       "install": "npm install -g @fission-ai/openspec@latest"
+    },
+    "superpowers": {
+      "type": "claude-plugin-marketplace",
+      "marketplace": "obra/superpowers-marketplace",
+      "plugin": "superpowers@superpowers-marketplace",
+      "install": [
+        "/plugin marketplace add obra/superpowers-marketplace",
+        "/plugin install superpowers@superpowers-marketplace"
+      ],
+      "notes": "Forgevia relies on the upstream Claude superpowers plugin, then overlays managed customizations."
     }
   },
   "managedAssets": [

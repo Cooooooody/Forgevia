@@ -211,4 +211,25 @@ fi
 assert_contains "$missing_openspec_output" "openspec is not installed or not on PATH"
 assert_contains "$missing_openspec_output" "--install-openspec"
 
+missing_plugin_dir="$(mktemp -d)"
+trap 'rm -rf "$tmp_dir" "$missing_openspec_dir" "$missing_plugin_dir"' EXIT
+export CLAUDE_HOME="$missing_plugin_dir/.claude"
+export OPENSPEC_ROOT="$tmp_dir/openspec"
+mkdir -p "$CLAUDE_HOME/plugins"
+
+set +e
+missing_plugin_output="$(PATH="$bin_dir:$PATH" "$INSTALLER" 2>&1)"
+missing_plugin_status=$?
+set -e
+
+if [[ "$missing_plugin_status" != "1" ]]; then
+  echo "expected missing plugin exit code 1 but got $missing_plugin_status" >&2
+  exit 1
+fi
+assert_contains "$missing_plugin_output" "/plugin marketplace add obra/superpowers-marketplace"
+assert_contains "$missing_plugin_output" "/plugin install superpowers@superpowers-marketplace"
+assert_contains "$missing_plugin_output" "choose:"
+assert_contains "$missing_plugin_output" "user"
+assert_contains "$missing_plugin_output" "CLAUDE_SUPERPOWERS_ROOT"
+
 echo "claude installer smoke test passed"

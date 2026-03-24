@@ -93,7 +93,16 @@ Claude superpowers plugin is not installed or could not be located.
 Expected an installed plugin path from:
   $CLAUDE_ROOT/plugins/installed_plugins.json
 
-Install the Claude superpowers plugin first, or set CLAUDE_SUPERPOWERS_ROOT manually.
+In Claude Code, register the marketplace first:
+  /plugin marketplace add obra/superpowers-marketplace
+
+Then install the plugin from this marketplace:
+  /plugin install superpowers@superpowers-marketplace
+
+When Claude Code asks for the install scope, choose:
+  user
+
+If the plugin is already installed but stored elsewhere, set CLAUDE_SUPERPOWERS_ROOT manually.
 EOF
   exit 1
 }

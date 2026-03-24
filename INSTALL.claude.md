@@ -6,7 +6,7 @@ The Claude installer manages:
 
 - Forgevia and OpenSpec support skills under `~/.claude/skills`
 - the `opsx` command set under `~/.claude/commands`
-- `forgevia-think`
+- the full Forgevia Claude skill set
 - Forgevia-managed overrides for selected installed Claude superpowers skills:
   - `brainstorming`
   - `writing-plans`
@@ -23,6 +23,20 @@ This path installs Forgevia-managed Claude skills and commands into `~/.claude` 
 - the Claude superpowers plugin must already be installed
 
 If `openspec` is missing, either install it yourself with `npm install -g @fission-ai/openspec@latest` or let the installer do it with `--install-openspec`.
+
+In Claude Code, register the marketplace first:
+
+```text
+/plugin marketplace add obra/superpowers-marketplace
+```
+
+Then install the plugin from this marketplace:
+
+```text
+/plugin install superpowers@superpowers-marketplace
+```
+
+When Claude Code prompts for the install scope, choose `user`.
 
 ## Current Scope
 
